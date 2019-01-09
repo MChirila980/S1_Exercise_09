@@ -19,6 +19,7 @@
    <title>Red Ball Survey</title>
    <link href="rb_reset.css" rel="stylesheet" />
    <link href="rb_styles.css" rel="stylesheet" />
+   <script src="rb_formsubmit.js"></script>
 
 </head>
 
@@ -52,13 +53,15 @@
          parties, <em>ever</em>. </p>
       <p>Required values are marked by an asterisk (*)</p>
 
-      <form id="survey" action="http://example.com/redbull/survey" method="POST" ></form>
+      <form id="survey" action="http://example.com/redbull/survey" method="POST" >
       <fieldset id="custinfo" >
           <legend>Customer Information</legend>
+          Name*
       </fieldset>
       <fieldset id="expinfo">
           <legend>Share your experience at Redbull Pizza</legend>
       </fieldset>
+    </form>
 
    </section>
    <footer>
