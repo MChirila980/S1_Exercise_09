@@ -103,7 +103,7 @@
                         <option value="other">Other</option>
                     </select>
                 </div>
-<!-- new box container, about sharing your experience at Red Ball Pizza! -->
+                <!-- new box container, about sharing your experience at Red Ball Pizza! -->
             </fieldset>
             <fieldset id="expInfo">
                 <legend>Share your experience at red ball pizza</legend>
@@ -122,8 +122,55 @@
                 </div>
 
                 <!-- RADIO BUTTONS -->
+                <!-- :A radio button or option button 
+                    is a graphical control element that allows the user to choose only 
+                    one of a predefined set of mutually exclusive options. -->
 
+                <div class="formRow">
+                    <label>Was your order correct?</label>
+                    <fieldset class="optGroup">
+                        <label for="fYes">Yes</label>
+                        <input type="radio" name="oCorrect" id="cYes" value="Yes" />
+                        <label for="cNo">No</label>
+                        <input type="radio" name="oCorrect" id="cNo" value="No" />
+                    </fieldset>
+                </div>
+
+                <div class="formRow">
+                    <label>Was your food hot?</label>
+                    <fieldset class="optGroup">
+                        <label for="fYes">Yes</label>
+                        <input type="radio" name="oCorrect" id="cYes" value="Yes" />
+                        <label for="cNo">No</label>
+                        <input type="radio" name="oCorrect" id="cNo" value="No" />
+                    </fieldset>
+                </div>
+
+
+                <input type="checkbox" name="mailMe" id="mailCB" value="Yes">
+                <label for="mailCB">Add us to your mailing list to recieve great coupons and specials!!</label>
+
+                <!-- For the rating of your experience can drag the dot from scale numbers 1-10  -->
+                <div class="formRow">
+                    <label for="rangebox"> Rate the overall service <br />
+                        (0=poor; 10=great)</label>
+                    <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
+                </div>
+                <!-- text area box! -->
+
+                <label for="commbox"> Tell us more about your experience! </label>
+                <textarea name="custExp" id="commBox"></textarea>
             </fieldset>
+        </form>
+
+           
+
+
+        </fieldset>
+        <div id="buttons"> 
+            <input value="Submit my survey" type="Submit">
+            <input type="Reset" value="Cancel">
+        </div>
         </form>
 
     </section>
