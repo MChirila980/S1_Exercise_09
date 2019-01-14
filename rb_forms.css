@@ -56,7 +56,7 @@ legend {
 /* Text Area Styles */
 textarea {
     margin-top: 10px;
-    height: 100%;
+    height: 100px;
     width: 95%;
 }
 
@@ -68,7 +68,39 @@ div.formRow>input#dinespin {
 }
 
 /* Form Button Styles */
+div#Buttons {
+    text-align: center;
+    width: 100%;
+}
 
-
+input[type='submit'],
+input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
 
 /* Validation Styles */
+/* so that when u are on the selected text area the backgroud color is green. */
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+/* WHen the information is invalid the textarea wil turn a red color.*/
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+    background: rgb(220, 255, 220) url(rb_valid.png) bottom right/ contain no-repeat;
+}
+
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+    background: rgb(255, 168, 173) url(rb_invalid.png) bottom right/ contain no-repeat;
+}
